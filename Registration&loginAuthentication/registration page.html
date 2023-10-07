@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+             text-align: center;
+             position: absolute;
+             left: 600px;
+             top: 200px;
+        }
+        .hii{
+            position: absolute;
+            top: 100px;
+        }
+        .lii{
+         position: absolute;
+         top: 90px;
+         left: 100px;
+        }
+        body{
+            background-color: violet;
+        }
+      
+    </style>
+</head>
+<body>
+<form id="form">
+    <div class="hello">
+    <label for="fname">username</label>
+     <input  type="text" name="" id=""><br>
+     </div>
+     <div class="hii">
+     <label for="fname">password</label>
+     <input  type="text" name="" id="">
+     <input class="lii" type="submit" name="" id="">
+     </div>
+     
+</form>
+<script>
+    let forms=document.getElementById("form")
+    forms.addEventListener("submit",function(event){
+     event.preventDefault()
+     let username=event.target[0].value;
+     let password=event.target[1].value;
+    
+     
+     let obj={
+       "user":username,
+       "pass":password
+
+     }
+     
+     fetch("http://localhost:3000/posts",{
+        method:"post",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(obj)
+     }).then((val)=>val.json()).then((val)=>console.log(val)).catch((error)=>console.log(error))
+    })
+</script>
+</body>
+</html>1

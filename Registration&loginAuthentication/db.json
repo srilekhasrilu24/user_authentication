@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "user": "ambatisrilekha",
+      "pass": "123456789",
+      "id": 2
+    },
+    {
+      "user": "srilu",
+      "pass": "123",
+      "id": 3
+    },
+    {
+      "user": "deepika",
+      "pass": "123456",
+      "id": 4
+    },
+    {
+      "user": "srilu goud",
+      "pass": "123890",
+      "id": 5
+    },
+    {
+      "user": "",
+      "pass": "",
+      "id": 6
+    },
+    {
+      "user": "ambati srilekhaa",
+      "pass": "1451",
+      "id": 7
+    },
+    {
+      "user": "sriluroshi",
+      "pass": "73372",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
